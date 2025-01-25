@@ -161,8 +161,8 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Deep_color: {r: 0.16981128, g: 0.14555413, b: 0.006941941, a: 0.99607843}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Shadow_color: {r: 0.12842642, g: 0.23270428, b: 0.09000824, a: 1}
+    - _Shadow_color: {r: 0.12885495, g: 0.24528301, b: 0.08407495, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _foamcolour: {r: 0.8301887, g: 1, b: 0.9629668, a: 0.3529412}
+    - _foamcolour: {r: 0.22961906, g: 0.33962262, b: 0.3165986, a: 0.3529412}
     - _normaltitling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
