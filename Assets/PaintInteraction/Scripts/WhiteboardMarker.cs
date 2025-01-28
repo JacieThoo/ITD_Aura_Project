@@ -45,11 +45,13 @@ public class WhiteboardMarker : MonoBehaviour
 
                 touchPos = new Vector2(touch.textureCoord.x, touch.textureCoord.y);
 
+                // Calculate the starting point for drawing
                 var x = (int)(touchPos.x * whiteboard.textureSize.x - (penSize / 2));
                 var y = (int)(touchPos.y * whiteboard.textureSize.y - (penSize / 2));
 
-                if (y < 0 || y > whiteboard.textureSize.y || x < 0 || x > whiteboard.textureSize.x)
-                    return;
+                // Clamp the starting point to the valid texture bounds
+                x = Mathf.Clamp(x, 0, (int)whiteboard.textureSize.x - penSize);
+                y = Mathf.Clamp(y, 0, (int)whiteboard.textureSize.y - penSize);
 
                 if (touchLastFrame)
                 {
@@ -57,8 +59,8 @@ public class WhiteboardMarker : MonoBehaviour
 
                     for (float f = 0.01f; f < 1.00f; f += 0.01f)
                     {
-                        var lerpX = (int)Mathf.Lerp(lastTouchPos.x, x, f);
-                        var lerpY = (int)Mathf.Lerp(lastTouchPos.y, y, f);
+                        var lerpX = Mathf.Clamp((int)Mathf.Lerp(lastTouchPos.x, x, f), 0, (int)whiteboard.textureSize.x - penSize);
+                        var lerpY = Mathf.Clamp((int)Mathf.Lerp(lastTouchPos.y, y, f), 0, (int)whiteboard.textureSize.y - penSize);
                         whiteboard.texture.SetPixels(lerpX, lerpY, penSize, penSize, colors);
                     }
 
@@ -72,11 +74,11 @@ public class WhiteboardMarker : MonoBehaviour
                 touchLastFrame = true;
                 return;
             }
-           
         }
 
         whiteboard = null;
         touchLastFrame = false;
     }
+
 
 }
