@@ -386,11 +386,11 @@ PrefabInstance:
     - target: {fileID: 8730373892050512174, guid: e358a3f3d339d8a4dba3409b4151fa69, type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2134477408}
+      objectReference: {fileID: 2134477412}
     - target: {fileID: 8730373892050512174, guid: e358a3f3d339d8a4dba3409b4151fa69, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2134477408}
+      objectReference: {fileID: 2134477412}
     - target: {fileID: 8730373892050512174, guid: e358a3f3d339d8a4dba3409b4151fa69, type: 3}
       propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TakePhoto
@@ -398,7 +398,7 @@ PrefabInstance:
     - target: {fileID: 8730373892050512174, guid: e358a3f3d339d8a4dba3409b4151fa69, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2134477408}
+      objectReference: {fileID: 2134477412}
     - target: {fileID: 8730373892050512174, guid: e358a3f3d339d8a4dba3409b4151fa69, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TurnOff
@@ -447,11 +447,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 973242469638702981, guid: e358a3f3d339d8a4dba3409b4151fa69, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1654094683571101653, guid: e358a3f3d339d8a4dba3409b4151fa69, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2134477412}
   m_SourcePrefab: {fileID: 100100000, guid: e358a3f3d339d8a4dba3409b4151fa69, type: 3}
+--- !u!4 &607757967 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7562218471101655329, guid: e358a3f3d339d8a4dba3409b4151fa69, type: 3}
+  m_PrefabInstance: {fileID: 592769273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &652124635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -603,6 +612,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2550463727306718371, guid: 00c9c177e828a57439e290aef2a23b3f, type: 3}
   m_PrefabInstance: {fileID: 652124635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &831152255 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4251187720050372583, guid: e358a3f3d339d8a4dba3409b4151fa69, type: 3}
+  m_PrefabInstance: {fileID: 592769273}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &864996098
 GameObject:
@@ -1031,6 +1045,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1688935781 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1654094683571101653, guid: e358a3f3d339d8a4dba3409b4151fa69, type: 3}
+  m_PrefabInstance: {fileID: 592769273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1783572213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,17 +1189,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2134477408 stripped
+--- !u!114 &2134477412
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 973242469638702981, guid: e358a3f3d339d8a4dba3409b4151fa69, type: 3}
-  m_PrefabInstance: {fileID: 592769273}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1688935781}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 820bc5040b4c5ed428b6385d41527188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  photoPrefab: {fileID: 8294744699115808653, guid: 3f58f25982114b345b86501d59968fec, type: 3}
+  screenRenderer: {fileID: 831152255}
+  spawnLocation: {fileID: 607757967}
+  supabaseUrl: https://qabrcgzafrzbwrtrezqc.supabase.co
+  supabaseAnonKey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFhYnJjZ3phZnJ6YndydHJlenFjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYzNTE1MjksImV4cCI6MjA1MTkyNzUyOX0.T7CTt9sVsRIg_zhrUokttmz_FDqeRT4Cocw9vDxqTfM
+  bucketName: images
 --- !u!1001 &601616564491716804
 PrefabInstance:
   m_ObjectHideFlags: 0
