@@ -1,12 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
+/*
+ * Author: Hoo Ying Qi Praise
+ * Date: 
+ * Description: 
+ */
+
 using System.Linq;
 using UnityEngine;
 
 public class WhiteboardMarker : MonoBehaviour
 {
     [SerializeField] private Transform tip;
-    [SerializeField] private int penSize = 5;
+    [SerializeField] private int penSize;
+    [SerializeField] private string brushColorTag;
 
     private Renderer _renderer;
     private Color[] colors;
@@ -43,6 +48,14 @@ public class WhiteboardMarker : MonoBehaviour
                     whiteboard = touch.transform.GetComponent<Whiteboard>();
                 }
 
+                // Check for correct brush color
+                if (whiteboard.requiredColorTag != brushColorTag)
+                {
+                    GameManager.Instance.ShowWarning("Are you sure it is the right color?");
+                    return;
+                }
+
+
                 touchPos = new Vector2(touch.textureCoord.x, touch.textureCoord.y);
 
                 // Calculate the starting point for drawing
@@ -67,6 +80,7 @@ public class WhiteboardMarker : MonoBehaviour
                     transform.rotation = lastTouchRot;
 
                     whiteboard.texture.Apply();
+                    whiteboard.PaintCompleted();
                 }
 
                 lastTouchPos = new Vector2(x, y);
@@ -79,6 +93,4 @@ public class WhiteboardMarker : MonoBehaviour
         whiteboard = null;
         touchLastFrame = false;
     }
-
-
 }
