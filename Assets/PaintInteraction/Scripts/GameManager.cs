@@ -4,6 +4,7 @@
  * Description: 
  */
 
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     private int score;
+    private TMP_Text ScoreText;
 
     [SerializeField] private Text whiteBoardText;
     [SerializeField] private GameObject WBPopUpCanvas;
