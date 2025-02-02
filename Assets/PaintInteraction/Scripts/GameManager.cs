@@ -6,7 +6,7 @@
 
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Text to display on the whiteboard UI
     /// </summary>
-    [SerializeField] private Text whiteBoardText;
+    [SerializeField] private TMP_Text whiteBoardText;
 
     /// <summary>
     /// Pop-up canvas for the whiteboard UI
@@ -62,12 +62,29 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Show whiteboard UI warning messages
+    /// Show Warning Text
     /// </summary>
-    /// <param name="message"></param>
-    public void ShowWarning(string message)
+    public void ShowWarning()
     {
-        whiteBoardText.text = message; // Set warning message
+        whiteBoardText.text = "Are you sure it is the right color?"; // Warning message
         WBPopUpCanvas.SetActive(true); // Display the warning pop-up
+
+        // Start the coroutine to hide the warning after 3 seconds
+        StartCoroutine(HideShowWarning(3f));
     }
+
+    /// <summary>
+    /// Warning Text to disappear after a specified time
+    /// </summary>
+    /// <param name="delay"></param>
+    /// <returns></returns>
+    private IEnumerator HideShowWarning(float delay)
+    {
+        // Wait for delay
+        yield return new WaitForSeconds(delay);
+
+        // Hide pop-up after the delay
+        WBPopUpCanvas.SetActive(false);
+    }
+
 }

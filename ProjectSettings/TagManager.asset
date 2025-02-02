@@ -4,6 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - BluePaintBrush
+  - GreenPaintBrush
+  - RedPaintBrush
+  - Anchor
   - Whiteboard
   layers:
   - Default
