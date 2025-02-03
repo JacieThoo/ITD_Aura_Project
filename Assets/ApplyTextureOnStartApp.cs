@@ -1,3 +1,9 @@
+/*
+* Author: Tan Ting Yu Gwyneth
+* Date: 3/2/2025
+* Description: This file applies textures onto assets in the unity scene
+*/
+
 using System;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -7,10 +13,10 @@ using UnityEngine.Networking; // For UnityWebRequest
 public class ApplyTextureOnAppStart : MonoBehaviour
 {
     public string imageUrl = ""; // URL of the image to download
-    public string supabaseUrl = ""; // Supabase URL
-    public string supabaseAnonKey = ""; // Supabase Anon Key
-    public string bucketName = ""; // Supabase bucket name
-    public string uploadFolder = "images"; // Folder in the bucket to upload files
+    public string supabaseUrl = "https://qabrcgzafrzbwrtrezqc.supabase.co"; // Supabase URL
+    public string supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFhYnJjZ3phZnJ6YndydHJlenFjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYzNTE1MjksImV4cCI6MjA1MTkyNzUyOX0.T7CTt9sVsRIg_zhrUokttmz_FDqeRT4Cocw9vDxqTfM"; // Supabase Anon Key
+    public string bucketName = "images"; // Supabase bucket name
+    public string uploadFolder = "textures"; // Folder in the bucket to upload files
 
     public Image targetImageUI; // UI Image to display the downloaded image
 

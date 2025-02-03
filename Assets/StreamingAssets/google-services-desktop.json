@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "891920213301",
+    "firebase_url": "https://dda-aura-database-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "dda-aura-database",
+    "storage_bucket": "dda-aura-database.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891920213301:android:f05932e0043357f811987c",
+        "android_client_info": {
+          "package_name": "com.google.firebase.aura.test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8PZ-mkSrGFphPRD1OOHJcOmzfBn_moQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
