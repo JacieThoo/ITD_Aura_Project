@@ -169,6 +169,8 @@ public class AuthManager : MonoBehaviour
     /// <returns></returns>
     public async Task<FirebaseUser> SignUp()
     {
+        Debug.Log("sign up in progress");
+        Debug.Log(currentUserId);
         string username = databaseUiManager.signUpUsernameInputField.text;
         string email = databaseUiManager.signUpEmailInputField.text;
         string password = databaseUiManager.signUpPasswordInputField.text;
