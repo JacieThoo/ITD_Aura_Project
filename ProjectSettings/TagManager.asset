@@ -10,6 +10,12 @@ TagManager:
   - Anchor
   - Whiteboard
   - VRObject
+  - Correct
+  - Wrong
+  - 1
+  - 2
+  - 3
+  - 4
   layers:
   - Default
   - TransparentFX
