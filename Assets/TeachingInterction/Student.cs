@@ -78,7 +78,7 @@ public class Student : MonoBehaviour
     void AnswerQuestion()
     {
         generatedAnswer = Random.Range(1, 5);
-        speechBubble.text = generatedAnswer.ToString();
+        speechText.text = generatedAnswer.ToString();
 
         Debug.Log(gameObject.name + " answered " + generatedAnswer);
 
