@@ -8,8 +8,11 @@ public class Student : MonoBehaviour
     // Whether student can ans (raise hand and got qn to ans)
     public bool canAnswer;
 
-    // To put student speech andd ans
-    public TextMeshProUGUI speechBubble;
+    // To put student speech and ans
+    public TextMeshProUGUI speechText;
+
+    // Speech bubble that holds speechText
+    public GameObject speechBubble;
 
     // Student's answer (1-4 mcq)
     public int generatedAnswer;
@@ -54,6 +57,7 @@ public class Student : MonoBehaviour
                 teaching.LastSelectedStudent(this);
             }
 
+            speechBubble.SetActive(true);
             AnswerQuestion();
 
             // Check if ans correct
@@ -74,7 +78,7 @@ public class Student : MonoBehaviour
     void AnswerQuestion()
     {
         generatedAnswer = Random.Range(1, 5);
-        speechBubble.text = generatedAnswer.ToString();
+        speechText.text = generatedAnswer.ToString();
 
         Debug.Log(gameObject.name + " answered " + generatedAnswer);
 
@@ -97,5 +101,22 @@ public class Student : MonoBehaviour
             Debug.Log(gameObject.name + " answered wrongly");
             evaluateSocket.studentIsCorrect = false;
         }
+    }
+
+    /// <summary>
+    /// Logic for changing student speech
+    /// </summary>
+    /// <param name="speech"></param>
+    public void ChangeSpeech(string speech)
+    {
+        speechText.text = speech;
+    }
+
+    /// <summary>
+    /// Logic for hiding student speech bubble (The whole thing including speech text)
+    /// </summary>
+    public void HideSpeech()
+    {
+        speechBubble.SetActive(false);
     }
 }
