@@ -107,7 +107,7 @@ public class MyDatabase : MonoBehaviour
     public void CreateNewUser(string currentUserId, string username,string email, bool playerOnline, int aura,string profilePhoto)
     {
         Debug.Log("Creating user");
-
+        Debug.Log(currentUserId);
         UserDetails userDetails = new UserDetails(username,email,playerOnline, (int)unixTimestamp,aura,profilePhoto);
         ThoughtDetails thoughtDetails = new ThoughtDetails("",0);
         ImagesTaken imageTaken = new ImagesTaken();
