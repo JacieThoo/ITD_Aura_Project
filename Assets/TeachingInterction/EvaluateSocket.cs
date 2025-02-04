@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
+using TMPro;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
@@ -69,17 +71,20 @@ public class EvaluateSocket : MonoBehaviour
                     if (studentIsCorrect == false) // If student is wrong
                     {
                         Debug.Log("Correction needed");
+                        teaching.ChangeStudentSpeech("Oh, then what is the correct answer?");
                     }
                     else // If student is correct
                     {
                         Debug.Log("Correction not needed");
                         teaching.ShowNextQuestion();
+                        teaching.HideStudentSpeech();
                     }
                 }
                 else // If PLAYER is wrong
                 {
                     // MINUS AURA
                     Debug.Log("Player evaluated wrongly");
+                    teaching.ChangeStudentSpeech("What? I was right though.");
                 }
             }
         }

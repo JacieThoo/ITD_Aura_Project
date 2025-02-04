@@ -90,6 +90,23 @@ public class Teaching : MonoBehaviour
     }
 
     /// <summary>
+    /// Change speech of the last selected
+    /// </summary>
+    /// <param name="speech"></param>
+    public void ChangeStudentSpeech(string speech)
+    {
+        lastSelectedStudent.ChangeSpeech(speech);
+    }
+
+    /// <summary>
+    /// Hide speech of the last selected
+    /// </summary>
+    public void HideStudentSpeech()
+    {
+        lastSelectedStudent.HideSpeech();
+    }
+
+    /// <summary>
     /// Function to set last selected student 
     /// </summary>
     /// <param name="student"></param>

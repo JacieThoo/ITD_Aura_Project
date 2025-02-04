@@ -18,7 +18,6 @@ public class CorrectionSocket : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     /// <summary>
@@ -46,11 +45,13 @@ public class CorrectionSocket : MonoBehaviour
                     Debug.Log("Player correctly corrected");
                     // PLUS AURA
                     teaching.ShowNextQuestion();
+                    teaching.HideStudentSpeech();
                 }
                 else
                 {
                     // MINUS AURA
                     Debug.Log("Player wrongly corrected");
+                    teaching.ChangeStudentSpeech("I don't think that's the answer...");
                 }
             }
         }
