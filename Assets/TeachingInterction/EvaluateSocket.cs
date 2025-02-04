@@ -84,7 +84,7 @@ public class EvaluateSocket : MonoBehaviour
                 {
                     // MINUS AURA
                     Debug.Log("Player evaluated wrongly");
-                    teaching.ChangeStudentSpeech("What? I was right though.");
+                    teaching.ChangeStudentSpeech("What? Are you sure?");
                 }
             }
         }

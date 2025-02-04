@@ -113,6 +113,16 @@ public class Teaching : MonoBehaviour
     public void LastSelectedStudent(Student student)
     {
         lastSelectedStudent = student;
+
+        // Lower hands of all other students so only 1 selected student can ans per qn
+        foreach (var s in students)
+        {
+            if (s != student)
+            {
+                s.LowerHand();
+                s.speechBubble.SetActive(false);
+            }
+        }
     }
 
     // TO get last student selected by player (use in EvaluateSocket)
