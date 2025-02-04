@@ -15,9 +15,13 @@ public class CorrectionSocket : MonoBehaviour
     // Evaluate socket script
     public EvaluateSocket evaluateSocket;
 
+    // Database to update aura
+    public MyDatabase myDatabase;
+
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     /// <summary>
@@ -43,13 +47,17 @@ public class CorrectionSocket : MonoBehaviour
                 if (correctionCardTag == correctAnswer.ToString())
                 {
                     Debug.Log("Player correctly corrected");
-                    // PLUS AURA
+                    // Plus aura
+                    myDatabase.UpdateAura(10);
+
                     teaching.ShowNextQuestion();
                     teaching.HideStudentSpeech();
                 }
                 else
                 {
-                    // MINUS AURA
+                    // Minus aura
+                    myDatabase.UpdateAura(-5);
+
                     Debug.Log("Player wrongly corrected");
                     teaching.ChangeStudentSpeech("I don't think that's the answer...");
                 }
