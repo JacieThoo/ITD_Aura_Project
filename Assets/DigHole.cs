@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class DigHole : MonoBehaviour
 {
-    public GameObject newTerrain; // Assign TerrainB in Inspector
+    public GameObject newTerrain; 
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("VRObject")) // Check the tag of the GameObject
+        if (other.gameObject.CompareTag("VRObject")) 
         {
             SwapTerrain();
         }
