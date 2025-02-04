@@ -113,7 +113,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 973242469638702981}
         m_TargetAssemblyTypeName: Polaroid, Assembly-CSharp
         m_MethodName: TurnOn
         m_Mode: 1
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 973242469638702981}
         m_TargetAssemblyTypeName: Polaroid, Assembly-CSharp
         m_MethodName: TurnOff
         m_Mode: 1
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Activated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 973242469638702981}
         m_TargetAssemblyTypeName: Polaroid, Assembly-CSharp
         m_MethodName: TakePhoto
         m_Mode: 1
@@ -238,6 +238,9 @@ MonoBehaviour:
   photoPrefab: {fileID: 8294744699115808653, guid: 3f58f25982114b345b86501d59968fec, type: 3}
   screenRenderer: {fileID: 4251187720050372583}
   spawnLocation: {fileID: 7562218471101655329}
+  supabaseUrl: https://qabrcgzafrzbwrtrezqc.supabase.co
+  supabaseAnonKey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFhYnJjZ3phZnJ6YndydHJlenFjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYzNTE1MjksImV4cCI6MjA1MTkyNzUyOX0.T7CTt9sVsRIg_zhrUokttmz_FDqeRT4Cocw9vDxqTfM
+  bucketName: images
 --- !u!1 &3324219872869905576
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +306,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 10
+  far clip plane: 200
   field of view: 60
   orthographic: 0
   orthographic size: 5
