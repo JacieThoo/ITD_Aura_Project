@@ -1,18 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DigHole : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject newTerrain; // Assign TerrainB in Inspector
+
+    private void OnCollisionEnter(Collision other)
     {
-        
+        if (other.gameObject.CompareTag("VRObject")) // Check the tag of the GameObject
+        {
+            SwapTerrain();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void SwapTerrain()
     {
-        
+        if (newTerrain != null)
+        {
+            newTerrain.SetActive(true);  // Enable the new terrain
+            gameObject.SetActive(false); // Disable the old terrain
+        }
     }
 }

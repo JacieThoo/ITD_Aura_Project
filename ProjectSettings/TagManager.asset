@@ -9,6 +9,7 @@ TagManager:
   - RedPaintBrush
   - Anchor
   - Whiteboard
+  - VRObject
   layers:
   - Default
   - TransparentFX
