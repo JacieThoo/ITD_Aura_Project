@@ -120,6 +120,7 @@ public class Teaching : MonoBehaviour
             if (s != student)
             {
                 s.LowerHand();
+                s.speechBubble.SetActive(false);
             }
         }
     }

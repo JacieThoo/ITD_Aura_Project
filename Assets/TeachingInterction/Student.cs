@@ -29,6 +29,8 @@ public class Student : MonoBehaviour
     public void RaiseHand()
     {
         canAnswer = true;
+        speechBubble.SetActive(true);
+        speechText.text = "Me!";
         Debug.Log(gameObject.name + " raised their hand");
         // ADD ANIMATION OF STUDENT RAISING HAND etc
     }
