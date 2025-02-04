@@ -86,6 +86,7 @@ public class AuthManager : MonoBehaviour
             Debug.Log("Current User is: " + _auth.CurrentUser.UserId);
             currentUserId = _auth.CurrentUser.UserId;
             myDatabase.DisplayAura();
+            databaseUiManager.homePanel.SetActive(true);
             HideAllPanels();
         }
     }
@@ -129,6 +130,7 @@ public class AuthManager : MonoBehaviour
     {
         databaseUiManager.logInPanel.SetActive(false);
         databaseUiManager.signUpPanel.SetActive(true);
+        databaseUiManager.homePanel.SetActive(false);
         ResetSignUpInput();
     }
 
@@ -139,6 +141,7 @@ public class AuthManager : MonoBehaviour
     {
         databaseUiManager.logInPanel.SetActive(true);
         databaseUiManager.signUpPanel.SetActive(false);
+        databaseUiManager.homePanel.SetActive(false);
         ResetLogInInput();
     }
 

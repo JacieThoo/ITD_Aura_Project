@@ -59,6 +59,12 @@ public class DatabaseUiManager : MonoBehaviour
     /// </summary>
     public TextMeshProUGUI signUpErrorMsgContent;
 
+    [Header("Home References")]
+    /// <summary>
+    /// Variable to store home panel
+    /// </summary>
+    public GameObject homePanel;
+
     [Header("Aura data shown in profile")]
     /// <summary>
     /// Aura shown in profile
