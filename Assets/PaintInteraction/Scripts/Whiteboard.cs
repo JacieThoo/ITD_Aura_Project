@@ -20,11 +20,11 @@ public class Whiteboard : MonoBehaviour
 
     void Start()
     {
-        //if (myDatabase == null)
-        //{
-           // Debug.LogError("MyDatabase reference not set in Whiteboard script.");
-            //return; // Early exit to avoid further issues
-        //}
+        if (myDatabase == null)
+        {
+           Debug.LogError("MyDatabase reference not set in Whiteboard script.");
+            return; // Early exit to avoid further issues
+        }
 
         var r = GetComponent<Renderer>();
         texture = new Texture2D((int)textureSize.x, (int)textureSize.y);
@@ -54,8 +54,8 @@ public class Whiteboard : MonoBehaviour
     private void OnWhiteboardFullyPainted()
     {
         // Update aura when the whiteboard is fully painted
-        //int auraValue = 100; 
-        //myDatabase.UpdateAura(auraValue);
+        int auraValue = 100; 
+        myDatabase.UpdateAura(auraValue);
 
         Debug.Log(gameObject.name + " is fully painted!");
     }
