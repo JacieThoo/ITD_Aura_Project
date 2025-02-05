@@ -1,3 +1,9 @@
+/*
+* Author: Jacie Thoo Yixuan
+* Date: 1/2/2025
+* Description: For the correction part of teaching interaction
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

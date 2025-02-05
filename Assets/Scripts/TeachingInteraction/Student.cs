@@ -1,3 +1,9 @@
+/*
+* Author: Jacie Thoo Yixuan
+* Date: 31/1/2025
+* Description: Handles student behaviour
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;

@@ -1,3 +1,9 @@
+/*
+* Author: Jacie Thoo Yixuan
+* Date: 31/1/2025
+* Description: For showing text (questions and options) on the chalkboard
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;

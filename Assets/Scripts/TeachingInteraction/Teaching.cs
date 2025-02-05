@@ -1,3 +1,10 @@
+/*
+* Author: Jacie Thoo Yixuan
+* Date: 31/1/2025
+* Description: Holds list of questions, students, options and correct answers
+* 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,6 +58,10 @@ public class Teaching : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// To trigger teaching interaction
+    /// </summary>
+    /// <param name="other"></param>
     public void OnTriggerEnter(Collider other)
     {
         ShowNextQuestion();
