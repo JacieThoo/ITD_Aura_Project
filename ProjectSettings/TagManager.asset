@@ -16,6 +16,8 @@ TagManager:
   - 2
   - 3
   - 4
+  - Ground
+  - Water
   layers:
   - Default
   - TransparentFX
