@@ -16,7 +16,7 @@ public class CorrectionSocket : MonoBehaviour
     public EvaluateSocket evaluateSocket;
 
     // Database to update aura
-    public MyDatabase myDatabase;
+    //public MyDatabase myDatabase;
 
     // Start is called before the first frame update
     void Start()
@@ -48,7 +48,7 @@ public class CorrectionSocket : MonoBehaviour
                 {
                     Debug.Log("Player correctly corrected");
                     // Plus aura
-                    myDatabase.UpdateAura(10);
+                    //myDatabase.UpdateAura(10);
 
                     teaching.ShowNextQuestion();
                     teaching.HideStudentSpeech();
@@ -56,7 +56,7 @@ public class CorrectionSocket : MonoBehaviour
                 else
                 {
                     // Minus aura
-                    myDatabase.UpdateAura(-5);
+                    //myDatabase.UpdateAura(-5);
 
                     Debug.Log("Player wrongly corrected");
                     teaching.ChangeStudentSpeech("I don't think that's the answer...");
