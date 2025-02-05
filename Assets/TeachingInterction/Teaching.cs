@@ -40,6 +40,9 @@ public class Teaching : MonoBehaviour
     // Box collider for starting teaching interaction
     public Collider boxCollider;
 
+    // Database to update aura
+    public MyDatabase myDatabase;
+
     // ************** Make sure element num for each qn/option/ans corresponds
 
     // Start is called before the first frame update
@@ -94,7 +97,8 @@ public class Teaching : MonoBehaviour
         }
         else
         {
-            Debug.Log("Either no more questions or it's the first question");
+            Debug.Log("All questions completed");
+            myDatabase.UpdateAura(400);
         }
     }
 
