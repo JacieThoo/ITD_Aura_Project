@@ -16,8 +16,15 @@ TagManager:
   - 2
   - 3
   - 4
+<<<<<<< HEAD
   - Ground
   - Water
+=======
+  - Recyclable
+  - Hazardous
+  - Residual
+  - Food
+>>>>>>> 39320214c9fc04f53a9231559fc1b667b55d8de0
   layers:
   - Default
   - TransparentFX
