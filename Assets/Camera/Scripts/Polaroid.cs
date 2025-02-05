@@ -43,7 +43,7 @@ public class Polaroid : MonoBehaviour
 
     private void CreateRenderTexture()
     {
-        RenderTexture newTexture = new RenderTexture(256, 256, 32, RenderTextureFormat.Default, RenderTextureReadWrite.sRGB);
+        RenderTexture newTexture = new RenderTexture(1024, 1024, 32, RenderTextureFormat.Default, RenderTextureReadWrite.sRGB);
         newTexture.antiAliasing = 4;
 
         renderCamera.targetTexture = newTexture;
@@ -125,8 +125,8 @@ public class Polaroid : MonoBehaviour
         camera.Render();
         RenderTexture.active = camera.targetTexture;
 
-        Texture2D photo = new Texture2D(256, 256, TextureFormat.RGB24, false);
-        photo.ReadPixels(new Rect(0, 0, 256, 256), 0, 0);
+        Texture2D photo = new Texture2D(1024, 1024, TextureFormat.RGB24, false);
+        photo.ReadPixels(new Rect(0, 0, 1024, 1024), 0, 0);
         photo.Apply();
 
         return photo;

@@ -37,12 +37,21 @@ public class Teaching : MonoBehaviour
     // Whether at least 1 hand is raised
     private bool atLeastOneRaisedHand;
 
+    // Box collider for starting teaching interaction
+    public Collider boxCollider;
+
     // ************** Make sure element num for each qn/option/ans corresponds
 
     // Start is called before the first frame update
     void Start()
     {
+
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
         ShowNextQuestion();
+        boxCollider.enabled = false;
     }
 
     /// <summary>
@@ -85,7 +94,7 @@ public class Teaching : MonoBehaviour
         }
         else
         {
-            Debug.Log("No more questions");
+            Debug.Log("Either no more questions or it's the first question");
         }
     }
 

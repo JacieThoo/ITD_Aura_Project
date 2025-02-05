@@ -23,6 +23,9 @@ public class EvaluateSocket : MonoBehaviour
     // Whether player has evaluated the student's ans 
     public bool playerHasEvaluated;
 
+    // Database to update aura
+    public MyDatabase myDatabase;
+
     /// <summary>
     /// Checks tag of the card (wrong/correct)
     /// Match to current student's answer and actual answer
@@ -66,7 +69,8 @@ public class EvaluateSocket : MonoBehaviour
                 if (studentIsCorrect == playerSaidCorrect)
                 {
                     Debug.Log("Player evaluated correctly");
-                    // PLUS AURA
+                    // Plus aura
+                    myDatabase.UpdateAura(20);
 
                     if (studentIsCorrect == false) // If student is wrong
                     {
@@ -82,7 +86,8 @@ public class EvaluateSocket : MonoBehaviour
                 }
                 else // If PLAYER is wrong
                 {
-                    // MINUS AURA
+                    // Minus aura
+                    myDatabase.UpdateAura(-10);
                     Debug.Log("Player evaluated wrongly");
                     teaching.ChangeStudentSpeech("What? Are you sure?");
                 }
