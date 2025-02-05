@@ -16,6 +16,10 @@ TagManager:
   - 2
   - 3
   - 4
+  - Recyclable
+  - Hazardous
+  - Residual
+  - Food
   layers:
   - Default
   - TransparentFX
