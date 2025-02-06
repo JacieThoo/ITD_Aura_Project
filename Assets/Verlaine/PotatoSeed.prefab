@@ -56,7 +56,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: PotatoSeed
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4902873308867040612, guid: 450c20421250d524ead2f3529d902cc4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
