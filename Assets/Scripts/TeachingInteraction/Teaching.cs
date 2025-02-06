@@ -2,7 +2,7 @@
 * Author: Jacie Thoo Yixuan
 * Date: 31/1/2025
 * Description: Holds list of questions, students, options and correct answers
-* 
+* Handles questions and hand raising
 */
 
 using System.Collections;
