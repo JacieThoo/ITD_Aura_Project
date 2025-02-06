@@ -6,22 +6,27 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class PlantGrowth : MonoBehaviour
 {
     public GameObject vegObject; // The plant that will grow
     public float growTime = 10f; // Time until growth
     public TextMeshProUGUI timerUI; // UI text to show countdown
-
+  
     private bool planted = false; //not planted initially
     private bool watered = false; // not watered initailly
     private float timeRemaining; // the time remaining to grow
+
+    public Canvas carrotCanvas; 
+
 
     /// <summary>
     /// Function to count the remaining time for the crop to grow
     /// </summary>
     private void Start()
     {
+        carrotCanvas.gameObject.SetActive(false); //Hide canvas first
         timeRemaining = growTime;
     }
 
@@ -73,6 +78,7 @@ public class PlantGrowth : MonoBehaviour
     /// </summary>
     private void UpdateTimerUI()
     {
+        carrotCanvas.gameObject.SetActive(true); //show canvas after watering
         int minutes = Mathf.FloorToInt(timeRemaining / 60);
         int seconds = Mathf.FloorToInt(timeRemaining % 60);
         timerUI.text = $"{minutes:D2}:{seconds:D2}";
