@@ -10,7 +10,9 @@ using Unity.VisualScripting;
 
 public class PlantGrowth : MonoBehaviour
 {
-    public GameObject vegObject; // The plant that will grow
+    public GameObject vegObject;
+    public GameObject vegObject2;
+    public GameObject vegObject3;// The plant that will grow
     public float growTime = 10f; // Time until growth
     public TextMeshProUGUI timerUI; // UI text to show countdown
   
@@ -68,7 +70,18 @@ public class PlantGrowth : MonoBehaviour
 
         // Growth complete
         timerUI.text = "Ready!";
-        Instantiate(vegObject, transform.position, Quaternion.identity); //Spawn the plant 
+        if (gameObject.tag == "Potato") //Spawn 3 if is potato
+        {
+            Instantiate(vegObject, transform.position, Quaternion.identity); //Spawn the plant 
+            Instantiate(vegObject2, transform.position, Quaternion.identity); //Spawn the plant 
+            Instantiate(vegObject3, transform.position, Quaternion.identity); //Spawn the plant 
+
+        }
+        else //Spawn 1 if is carrot
+        {
+            Instantiate(vegObject, transform.position, Quaternion.identity); //Spawn the plant
+        }
+
         Debug.Log("Plant has grown!");
         Destroy(gameObject); //Destory the seed
     }
