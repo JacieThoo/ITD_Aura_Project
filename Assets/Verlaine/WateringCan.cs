@@ -7,7 +7,7 @@ public class WateringCanController : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ground")) 
+        if (collision.gameObject.CompareTag("Ground1")) 
         {
             isOnGround = true;
             StopWater();
@@ -16,7 +16,7 @@ public class WateringCanController : MonoBehaviour
 
     void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground1"))
         {
             isOnGround = false;
             StartWater();

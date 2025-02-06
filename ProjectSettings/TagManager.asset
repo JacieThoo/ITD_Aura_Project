@@ -3,7 +3,28 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Whiteboard
+  - BluePaintBrush
+  - Correct
+  - 3
+  - 4
+  - Recyclable
+  - 2
+  - 1
+  - Food
+  - Wrong
+  - Residual
+  - RedPaintBrush
+  - GreenPaintBrush
+  - Hazardous
+  - Ground
+  - VRObject
+  - Anchor
+  - Water
+  - Ground1
+  - Seed
+  - Shui
   layers:
   - Default
   - TransparentFX
