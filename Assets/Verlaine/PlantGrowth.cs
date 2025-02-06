@@ -18,7 +18,7 @@ public class PlantGrowth : MonoBehaviour
     private bool watered = false; // not watered initailly
     private float timeRemaining; // the time remaining to grow
 
-    public Canvas carrotCanvas; 
+    public Canvas carrotCanvas;
 
 
     /// <summary>
@@ -26,7 +26,7 @@ public class PlantGrowth : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        carrotCanvas.gameObject.SetActive(false); //Hide canvas first
+        carrotCanvas.gameObject.SetActive(false);
         timeRemaining = growTime;
     }
 
@@ -78,7 +78,7 @@ public class PlantGrowth : MonoBehaviour
     /// </summary>
     private void UpdateTimerUI()
     {
-        carrotCanvas.gameObject.SetActive(true); //show canvas after watering
+        carrotCanvas.gameObject.SetActive(true);
         int minutes = Mathf.FloorToInt(timeRemaining / 60);
         int seconds = Mathf.FloorToInt(timeRemaining % 60);
         timerUI.text = $"{minutes:D2}:{seconds:D2}";
