@@ -114,14 +114,18 @@ public class MyDatabase : MonoBehaviour
 
         // Generate a unique user path
         var userPath = userRef.Child(currentUserId);
+        var auraPath = userPath.Child("aura");
+        var thoughtLikesPath = userPath.Child("thoughtLikes");
         var userDetailsPath = userPath.Child("userDetails");
         var thoughtDetailsPath = userPath.Child("thoughtDetails");
         var imagesTakenPath = userPath.Child("imagesTaken");
 
         // Use async methods to ensure data is set correctly
-        userDetailsPath.SetRawJsonValueAsync(JsonUtility.ToJson(userDetailsPath));
-        thoughtDetailsPath.SetRawJsonValueAsync(JsonUtility.ToJson(thoughtDetailsPath));
-        imagesTakenPath.SetRawJsonValueAsync(JsonUtility.ToJson(imagesTakenPath));
+        auraPath.SetRawJsonValueAsync(JsonUtility.ToJson(0));
+        thoughtLikesPath.SetRawJsonValueAsync(JsonUtility.ToJson(0));
+        userDetailsPath.SetRawJsonValueAsync(JsonUtility.ToJson(userDetails));
+        thoughtDetailsPath.SetRawJsonValueAsync(JsonUtility.ToJson(thoughtDetails));
+        imagesTakenPath.SetRawJsonValueAsync(JsonUtility.ToJson(imageTaken));
     }
 
     /// <summary>
