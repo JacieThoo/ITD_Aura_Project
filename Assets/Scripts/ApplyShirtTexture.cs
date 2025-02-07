@@ -41,13 +41,11 @@ public class ApplyShirtTexture : MonoBehaviour
     /// Applies the image onto the texture
     /// </summary>
     /// <param name="currentUserId"></param>
-    public async void ApplyTexture(string currentUserId)
+    public async void ApplyTexture(string imageUrl)
     {
-        if (currentUserId != "")
+        if (imageUrl != "")
         {
-            string imageUrl = $"{supabaseUrl}/storage/v1/object/public/{bucketName}/{uploadFolder}/{currentUserId}";
             Debug.Log(imageUrl);
-
 
             Texture2D texture = await DownloadImage(imageUrl);
             if (shirt != null)

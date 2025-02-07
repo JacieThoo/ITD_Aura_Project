@@ -56,15 +56,13 @@ public class UserDetails
     /// <param name="email">The email of the player</param>
     /// <param name="userOnline">Indicates if the user is currently online</param>
     /// <param name="dateCreated">The date when the player's account was created</param>
-    /// <param name="aura">The date when the player's information was last updated</param>
-    /// <param name="aura">The date when the player's information was last updated</param>
-    public UserDetails(string username, string email, bool userOnline, int dateCreated, int aura, string profilePhoto)
+    /// <param name="profilePhoto">The profile photo of the user</param>
+    public UserDetails(string username, string email, bool userOnline, int dateCreated, string profilePhoto)
     {
         this.username = username; // Set username
         this.email = email; // Set email
         this.userOnline = userOnline; // Set online status
         this.dateCreated = dateCreated; // Set account creation date
-        this.aura = aura; // Set aura
         this.profilePhoto = profilePhoto; // Set profilePhoto
     }
 }

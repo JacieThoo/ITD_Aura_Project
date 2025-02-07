@@ -53,6 +53,11 @@ public class MyDatabase : MonoBehaviour
     public AuthManager authManager;
 
     /// <summary>
+    /// Reference to apply shirt texture script 
+    /// </summary>
+    public ApplyShirtTexture applyShirtTexture;
+
+    /// <summary>
     /// Handles logic when apps start
     /// </summary>
     public void Awake()
@@ -104,13 +109,12 @@ public class MyDatabase : MonoBehaviour
     /// <param name="currentUserId"></param>
     /// <param name="username"></param>
     /// <param name="email"></param>
-    public void CreateNewUser(string currentUserId, string username,string email, bool playerOnline, int aura,string profilePhoto)
+    public void CreateNewUser(string currentUserId, string username,string email, bool playerOnline,string profilePhoto)
     {
         Debug.Log("Creating user");
         Debug.Log(currentUserId);
-        UserDetails userDetails = new UserDetails(username,email,playerOnline, (int)unixTimestamp,aura,profilePhoto);
-        ThoughtDetails thoughtDetails = new ThoughtDetails("",0);
-        ImagesTaken imageTaken = new ImagesTaken();
+        UserDetails userDetails = new UserDetails(username,email,playerOnline, (int)unixTimestamp,profilePhoto);
+        ThoughtDetails thoughtDetails = new ThoughtDetails("");
 
         // Generate a unique user path
         var userPath = userRef.Child(currentUserId);
@@ -120,8 +124,8 @@ public class MyDatabase : MonoBehaviour
         var thoughtDetailsPath = userPath.Child("thoughtDetails");
 
         // Use async methods to ensure data is set correctly
-        auraPath.SetRawJsonValueAsync(JsonUtility.ToJson(0));
-        thoughtLikesPath.SetRawJsonValueAsync(JsonUtility.ToJson(0));
+        auraPath.SetValueAsync(0);
+        thoughtLikesPath.SetValueAsync(0);
         userDetailsPath.SetRawJsonValueAsync(JsonUtility.ToJson(userDetails));
         thoughtDetailsPath.SetRawJsonValueAsync(JsonUtility.ToJson(thoughtDetails));
     }
@@ -165,7 +169,7 @@ public class MyDatabase : MonoBehaviour
             ["aura"] = currentAura,
         };
 
-        dbRef.Child("users").Child(SetCurrentUserId()).Child("userDetails").UpdateChildrenAsync(updatedDetails);
+        dbRef.Child("users").Child(SetCurrentUserId()).UpdateChildrenAsync(updatedDetails);
         Debug.Log("Updated playerDetails date");
         //DisplayAura(currentUserId);
     }
@@ -177,7 +181,7 @@ public class MyDatabase : MonoBehaviour
     {
         Debug.Log("Aura showing");
 
-        dbRef.Child("users").Child(SetCurrentUserId()).Child("userDetails").GetValueAsync().ContinueWithOnMainThread(task =>
+        dbRef.Child("users").Child(SetCurrentUserId()).GetValueAsync().ContinueWithOnMainThread(task =>
         {
             if (task.IsFaulted)
             {
@@ -190,6 +194,36 @@ public class MyDatabase : MonoBehaviour
             }
         });
     }
+
+    public void GetProfilePicture()
+    {
+        Debug.Log("Getting profile");
+        dbRef.Child("users").Child(SetCurrentUserId()).GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            Debug.Log(task);
+            if (task.IsFaulted)
+            {
+                Debug.LogError("Failed to retrieve user data: " + task.Exception);
+            }
+            else if (task.IsCompleted)
+            {
+                DataSnapshot snapshot = task.Result;
+                if (snapshot.Exists)
+                {
+                    // Read data
+                    string imageUrl = snapshot.Child("userDetails").Child("profilePicture").Value.ToString();
+                    applyShirtTexture.ApplyTexture(imageUrl);
+                    Debug.Log($"Image url: {imageUrl}");
+                }
+                else
+                {
+                    Debug.Log("User does not exist.");
+                }
+            }
+           
+        });
+    }
+
 
     /// <summary>
     /// Reads player data 

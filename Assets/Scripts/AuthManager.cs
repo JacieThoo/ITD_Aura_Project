@@ -28,6 +28,11 @@ public class AuthManager : MonoBehaviour
     public MyDatabase myDatabase;
 
     /// <summary>
+    /// Reference to main database
+    /// </summary>
+    public ApplyShirtTexture applyShirtTexture;
+
+    /// <summary>
     /// Reference to loading page 
     /// </summary>
     public Loading loading;
@@ -86,6 +91,7 @@ public class AuthManager : MonoBehaviour
             Debug.Log("Current User is: " + _auth.CurrentUser.UserId);
             currentUserId = _auth.CurrentUser.UserId;
             myDatabase.DisplayAura();
+            myDatabase.GetProfilePicture();
             databaseUiManager.homePanel.SetActive(true);
             HideAllPanels();
         }
@@ -194,7 +200,7 @@ public class AuthManager : MonoBehaviour
                     Debug.Log("User signed up successfully");
                     databaseUiManager.logInErrorMsgContent.text = ""; //Reset error message in case user wants to signup again
                     HideAllPanels();
-                    myDatabase.CreateNewUser(currentUserId,username, email, true, 0, "https://pnghq.com/wp-content/uploads/pnghq.com-default-pfp-png-with-vibr-4.png"); // Creates user data in firebase
+                    myDatabase.CreateNewUser(currentUserId,username, email, true, "https://pnghq.com/wp-content/uploads/pnghq.com-default-pfp-png-with-vibr-4.png"); // Creates user data in firebase
                     myDatabase.DisplayAura();
                     loading.ShowLoadingScreen();
                 }

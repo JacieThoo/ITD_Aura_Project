@@ -16,11 +16,6 @@ public class ThoughtDetails
     public string thought;
 
     /// <summary>
-    /// Variable to store the thought likes of the player
-    /// </summary>
-    public int thoughtLikes;
-
-    /// <summary>
     /// Initializes an empty ThoughtDetails object
     /// </summary>
     public ThoughtDetails()
@@ -33,9 +28,8 @@ public class ThoughtDetails
     /// </summary>
     /// <param name="username">The username of the player</param>
     /// <param name="aura">The date when the player's information was last updated</param>
-    public ThoughtDetails(string username, int thoughtLikes)
+    public ThoughtDetails(string thought)
     {
         this.thought = thought; // Set thought
-        this.thoughtLikes = thoughtLikes; // Set thoughtLikes
     }
 }
