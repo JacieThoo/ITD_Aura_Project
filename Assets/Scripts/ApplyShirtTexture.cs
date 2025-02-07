@@ -37,6 +37,10 @@ public class ApplyShirtTexture : MonoBehaviour
     /// </summary>
     public GameObject shirt;
 
+    /// <summary>
+    /// Applies the image onto the texture
+    /// </summary>
+    /// <param name="currentUserId"></param>
     public async void ApplyTexture(string currentUserId)
     {
         if (currentUserId != "")
@@ -45,7 +49,7 @@ public class ApplyShirtTexture : MonoBehaviour
             Debug.Log(imageUrl);
 
 
-            Texture2D texture = await DownloadImage(ImageUrl);
+            Texture2D texture = await DownloadImage(imageUrl);
             if (shirt != null)
             {
                 Renderer renderer = shirt.GetComponent<Renderer>(); // Get Renderer
@@ -65,18 +69,7 @@ public class ApplyShirtTexture : MonoBehaviour
             }
         }
     }
-
-    /// <summary>
-    /// Gets the most updated link by getting the current user id
-    /// </summary>
-    public string ImageUrl
-    {
-        get
-        {
-            return $"{supabaseUrl}/storage/v1/object/public/{bucketName}/{uploadFolder}/{authManager.currentUserId}";
-        }
-    }
-
+   
     /// <summary>
     /// Downloads the image for unity to access
     /// </summary>

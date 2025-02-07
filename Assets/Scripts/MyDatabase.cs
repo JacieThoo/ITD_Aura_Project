@@ -118,14 +118,12 @@ public class MyDatabase : MonoBehaviour
         var thoughtLikesPath = userPath.Child("thoughtLikes");
         var userDetailsPath = userPath.Child("userDetails");
         var thoughtDetailsPath = userPath.Child("thoughtDetails");
-        var imagesTakenPath = userPath.Child("imagesTaken");
 
         // Use async methods to ensure data is set correctly
         auraPath.SetRawJsonValueAsync(JsonUtility.ToJson(0));
         thoughtLikesPath.SetRawJsonValueAsync(JsonUtility.ToJson(0));
         userDetailsPath.SetRawJsonValueAsync(JsonUtility.ToJson(userDetails));
         thoughtDetailsPath.SetRawJsonValueAsync(JsonUtility.ToJson(thoughtDetails));
-        imagesTakenPath.SetRawJsonValueAsync(JsonUtility.ToJson(imageTaken));
     }
 
     /// <summary>
