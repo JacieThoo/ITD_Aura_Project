@@ -195,25 +195,30 @@ public class MyDatabase : MonoBehaviour
         });
     }
 
+    /// <summary>
+    /// Gets the profile picture of the user
+    /// </summary>
     public void GetProfilePicture()
     {
         Debug.Log("Getting profile");
         dbRef.Child("users").Child(SetCurrentUserId()).GetValueAsync().ContinueWithOnMainThread(task =>
         {
-            Debug.Log(task);
             if (task.IsFaulted)
             {
                 Debug.LogError("Failed to retrieve user data: " + task.Exception);
             }
             else if (task.IsCompleted)
             {
+                
                 DataSnapshot snapshot = task.Result;
                 if (snapshot.Exists)
                 {
+                    Debug.Log("hi");
+
                     // Read data
-                    string imageUrl = snapshot.Child("userDetails").Child("profilePicture").Value.ToString();
+                    string imageUrl = snapshot.Child("userDetails").Child("profilePhoto").Value.ToString();
                     applyShirtTexture.ApplyTexture(imageUrl);
-                    Debug.Log($"Image url: {imageUrl}");
+                    Debug.Log(imageUrl);
                 }
                 else
                 {
