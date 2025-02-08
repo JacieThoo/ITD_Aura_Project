@@ -27,19 +27,4 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    public void ShowWarning()
-    {
-        if (warningText == null || WBPopUpCanvas == null) return;
-
-        warningText.text = "Wrong color used! ";
-        WBPopUpCanvas.SetActive(true);
-        StartCoroutine(HideShowWarning(2f));
-    }
-
-    private IEnumerator HideShowWarning(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        WBPopUpCanvas.SetActive(false);
-    }
 }

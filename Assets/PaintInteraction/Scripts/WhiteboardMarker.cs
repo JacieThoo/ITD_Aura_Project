@@ -10,7 +10,7 @@ using System.Linq;
 public class WhiteboardMarker : MonoBehaviour
 {
     [SerializeField] private Transform tip;
-    [SerializeField] private int penSize = 200;
+    [SerializeField] private int penSize;
 
     private Renderer _renderer;
     private Color[] colors;
@@ -54,24 +54,8 @@ public class WhiteboardMarker : MonoBehaviour
             return;
         }
 
-        if (!touch.transform.CompareTag("Whiteboard"))
-            return;
-
-        if (whiteboard == null)
-        {
-            whiteboard = touch.transform.GetComponent<Whiteboard>();
-            if (whiteboard == null)
-                return;
-        }
-
-        string brushName = gameObject.name;
-        string whiteboardName = touch.transform.name;
-
-        if (!whiteboardName.Contains(brushName.Replace("PaintBrush", "")))
-        {
-            GameManager.Instance.ShowWarning();
-            return;
-        }
+        whiteboard = touch.transform.GetComponent<Whiteboard>();
+        if (whiteboard == null) return; // Ensure it's a valid whiteboard
 
         touchPos = new Vector2(touch.textureCoord.x, touch.textureCoord.y);
         int x = Mathf.Clamp((int)(touchPos.x * whiteboard.textureSize.x - (penSize / 2)), 0, (int)whiteboard.textureSize.x - penSize);
@@ -80,7 +64,6 @@ public class WhiteboardMarker : MonoBehaviour
         if (touchLastFrame)
         {
             int newPixels = penSize * penSize;
-
             whiteboard.texture.SetPixels(x, y, penSize, penSize, colors);
 
             for (float f = 0.01f; f < 1.00f; f += 0.01f)
@@ -95,7 +78,7 @@ public class WhiteboardMarker : MonoBehaviour
             }
 
             whiteboard.RegisterPaintedPixels(newPixels);
-            whiteboard.texture.Apply(); 
+            whiteboard.texture.Apply();
         }
 
         lastTouchPos = new Vector2(x, y);

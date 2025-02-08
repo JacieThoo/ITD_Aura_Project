@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Whiteboard
-  - BluePaintBrush
   - Correct
   - 3
   - 4
@@ -15,8 +14,6 @@ TagManager:
   - Food
   - Wrong
   - Residual
-  - RedPaintBrush
-  - GreenPaintBrush
   - Hazardous
   - Ground
   - VRObject

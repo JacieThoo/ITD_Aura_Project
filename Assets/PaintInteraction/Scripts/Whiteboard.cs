@@ -22,7 +22,7 @@ public class Whiteboard : MonoBehaviour
     {
         if (myDatabase == null)
         {
-           Debug.LogError("MyDatabase reference not set in Whiteboard script.");
+            Debug.LogError("MyDatabase reference not set in Whiteboard script.");
             return; // Early exit to avoid further issues
         }
 
@@ -40,6 +40,9 @@ public class Whiteboard : MonoBehaviour
 
         paintedPixels += newPixels;
 
+        // Add aura points whenever paint touches the canvas
+        myDatabase.UpdateAura(newPixels / 100);
+
         // Calculate current coverage
         float coverage = (float)paintedPixels / totalPixels;
 
@@ -53,12 +56,10 @@ public class Whiteboard : MonoBehaviour
 
     private void OnWhiteboardFullyPainted()
     {
-        // Update aura when the whiteboard is fully painted
-        int auraValue = 100; 
+        // Additional aura points when fully painted
+        int auraValue = 100;
         myDatabase.UpdateAura(auraValue);
 
-        Debug.Log(gameObject.name + " is fully painted!");
+        Debug.Log(gameObject.name + " is fully painted, +100 ");
     }
 }
-
-
