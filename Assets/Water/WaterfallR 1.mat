@@ -61,7 +61,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 9862c50bfb869f748a83168fd6a2a727, type: 3}
+        m_Texture: {fileID: 2800000, guid: cc1fb5edb8aad2341a86273942282b65, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -101,7 +101,7 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _Clip: 0.111
+    - _Clip: 0.414
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
@@ -130,8 +130,8 @@ Material:
     - _BaseColor: {r: 0.7735849, g: 0.7442527, b: 0.7273644, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _MainTexColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MainTexColor: {r: 0.93303305, g: 0.93303305, b: 0.93303305, a: 1}
     - _MainTexSpeed: {r: 0, g: 0.65, b: 0, a: 0}
-    - _MainTexTiling: {r: 0.97, g: 1, b: 0, a: 0}
+    - _MainTexTiling: {r: 0.97, g: 0.88, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
