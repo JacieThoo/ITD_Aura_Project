@@ -28,11 +28,6 @@ public class AuthManager : MonoBehaviour
     public MyDatabase myDatabase;
 
     /// <summary>
-    /// Reference to main database
-    /// </summary>
-    public ApplyShirtTexture applyShirtTexture;
-
-    /// <summary>
     /// Reference to loading page 
     /// </summary>
     public Loading loading;

@@ -171,7 +171,7 @@ public class MyDatabase : MonoBehaviour
 
         dbRef.Child("users").Child(SetCurrentUserId()).UpdateChildrenAsync(updatedDetails);
         Debug.Log("Updated playerDetails date");
-        //DisplayAura(currentUserId);
+        DisplayAura();
     }
 
     /// <summary>
