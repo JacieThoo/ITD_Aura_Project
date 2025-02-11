@@ -10,9 +10,9 @@ using Unity.VisualScripting;
 
 public class PlantGrowth : MonoBehaviour
 {
-    public GameObject vegObject;
-    public GameObject vegObject2;
-    public GameObject vegObject3;// The plant that will grow
+    public GameObject vegObject; //The plant that will grow then spawn this object
+    public GameObject vegObject2; //The plant that will grow then spawn this object
+    public GameObject vegObject3;// The plant that will grow then spawn this object
     public float growTime = 10f; // Time until growth
     public TextMeshProUGUI timerUI; // UI text to show countdown
   
@@ -20,7 +20,7 @@ public class PlantGrowth : MonoBehaviour
     private bool watered = false; // not watered initailly
     private float timeRemaining; // the time remaining to grow
 
-    public Canvas carrotCanvas;
+    public Canvas carrotCanvas; //To show the timer
 
 
     /// <summary>
@@ -28,7 +28,7 @@ public class PlantGrowth : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        carrotCanvas.gameObject.SetActive(false);
+        carrotCanvas.gameObject.SetActive(false); //Initially dont show the timer canvas
         timeRemaining = growTime;
     }
 
@@ -58,7 +58,10 @@ public class PlantGrowth : MonoBehaviour
             StartCoroutine(GrowPlant());
         }
     }
-
+    /// <summary>
+    /// This function is to grow/ spawn the plant after X amount of secs
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator GrowPlant()
     {
         while (timeRemaining > 0)
@@ -70,7 +73,7 @@ public class PlantGrowth : MonoBehaviour
 
         // Growth complete
         timerUI.text = "Ready!";
-        if (gameObject.tag == "Potato") //Spawn 3 if is potato
+        if (gameObject.tag == "Potato") //check if is gameobject tag is potato //Spawn 3 if is potato
         {
             Instantiate(vegObject, transform.position, Quaternion.identity); //Spawn the plant 
             Instantiate(vegObject2, transform.position, Quaternion.identity); //Spawn the plant 
@@ -91,7 +94,7 @@ public class PlantGrowth : MonoBehaviour
     /// </summary>
     private void UpdateTimerUI()
     {
-        carrotCanvas.gameObject.SetActive(true);
+        carrotCanvas.gameObject.SetActive(true); // show the timer 
         int minutes = Mathf.FloorToInt(timeRemaining / 60);
         int seconds = Mathf.FloorToInt(timeRemaining % 60);
         timerUI.text = $"{minutes:D2}:{seconds:D2}";
