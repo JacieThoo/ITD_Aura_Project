@@ -15,12 +15,22 @@ public class BuildWell : MonoBehaviour
     /// </summary>
     public MyDatabase myDatabase;
 
+    public int bricksPlaced = 0;
+
     /// <summary>
     /// Updates aura when player places the brick
     /// Assign and call function in xr grab manager event
     /// </summary>
     public void PlaceBrick()
     {
-        myDatabase.UpdateAura(40);
+        if (bricksPlaced < 3)
+        {
+            myDatabase.UpdateAura(40);
+            bricksPlaced++;
+        }
+        else
+        {
+            Debug.Log("Already placed 3 bricks");
+        }
     }
 }
