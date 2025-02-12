@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: ec46d2188d4b8774e847e75f1e12a8db, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 4f56b77022eb00846860e0b9b7c4443e, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -264,6 +264,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &27249195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27249193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679975867ce769443aa573c3f25196a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues:
+  - Hi Student. Please help me grow my crops and then pass them to me and Ah Hock.
+  audioClips:
+  - {fileID: 0}
+  dialogueText: {fileID: 0}
+  talkButton: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &27353338
 GameObject:
   m_ObjectHideFlags: 0
@@ -10821,7 +10840,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1220623535
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14680,16 +14699,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5a114188735382c439666de305d2da7f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7812766
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a114188735382c439666de305d2da7f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7812766
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a114188735382c439666de305d2da7f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7812766
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a114188735382c439666de305d2da7f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.0041361
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a114188735382c439666de305d2da7f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.059
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a114188735382c439666de305d2da7f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.223
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5a114188735382c439666de305d2da7f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14730,6 +14761,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5a114188735382c439666de305d2da7f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 27249194}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5a114188735382c439666de305d2da7f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 27249195}
   m_SourcePrefab: {fileID: 100100000, guid: 5a114188735382c439666de305d2da7f, type: 3}
 --- !u!1 &1665390858
 GameObject:
@@ -15735,7 +15769,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: NaN, y: 1e-45, z: 7e-44, w: 2.9852962e-26}
+  m_BoundingSphereOverride: {x: 0, y: 7.1214145e+30, z: 6.84e-43, w: 3.790616e+30}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
