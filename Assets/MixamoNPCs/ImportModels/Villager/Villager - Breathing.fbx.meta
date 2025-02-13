@@ -1,0 +1,1257 @@
+fileFormatVersion: 2
+guid: a120a7a837f54ce47818f18c75d5d999
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'PitchforkRig_RightLeg' has translation
+      animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com (1)
+      takeName: mixamo.com
+      internalID: 1827226128182048838
+      firstFrame: 0
+      lastFrame: 298
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      internalID: -203655887218126122
+      firstFrame: 0
+      lastFrame: 298
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: PitchforkRig_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Eye_Joint
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Eye_Joint
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Thumb_01
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Thumb_02
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Thumb_03
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Point_01
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Point_02
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Point_03
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Index_01
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Index_02
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Index_03
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Ling_01
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Ling_02
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Ling_03
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Pointy_01
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Pointy_02
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Pointy_03
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Thumb_01
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Thumb_02
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Point_01
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Point_02
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Index_01
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Index_02
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Ring_01
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Ring_02
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Pointy_01
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Pointy_02
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PitchforkRig_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Villager - Breathing(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mesh
+      parentName: Villager - Breathing(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hat
+      parentName: Mesh
+      position: {x: -0, y: -2.842171e-16, z: -8.437695e-17}
+      rotation: {x: 1.6653345e-16, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eyes
+      parentName: Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Eye
+      parentName: Eyes
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Eye
+      parentName: Eyes
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shirt
+      parentName: Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hair
+      parentName: Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Legs
+      parentName: Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Skirt
+      parentName: Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Belt
+      parentName: Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Poncho
+      parentName: Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bandage
+      parentName: Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Face
+      parentName: Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Beard
+      parentName: Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eyebrows
+      parentName: Mesh
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Guides
+      parentName: Villager - Breathing(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head
+      parentName: PitchforkRig_Guides
+      position: {x: -0, y: 1.5445366, z: 0.026604544}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips
+      parentName: PitchforkRig_Guides
+      position: {x: -0, y: 1.0632495, z: 0.011289054}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftArm
+      parentName: PitchforkRig_Guides
+      position: {x: -0.114446186, y: 1.3812684, z: -0.030005435}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftFoot
+      parentName: PitchforkRig_Guides
+      position: {x: -0.13530912, y: 0.0328601, z: -0.05738633}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftForeArm
+      parentName: PitchforkRig_Guides
+      position: {x: -0.22181045, y: 1.1531429, z: -0.043193616}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftHand
+      parentName: PitchforkRig_Guides
+      position: {x: -0.31591478, y: 0.9614076, z: 0.027521681}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftLeg
+      parentName: PitchforkRig_Guides
+      position: {x: -0.10559147, y: 0.54165626, z: -0.021764271}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftShoulder
+      parentName: PitchforkRig_Guides
+      position: {x: -0.05687683, y: 1.2845372, z: -0.02882384}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftToeBase
+      parentName: PitchforkRig_Guides
+      position: {x: -0.15532309, y: 0.024804724, z: 0.09844174}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftUpLeg
+      parentName: PitchforkRig_Guides
+      position: {x: -0.085404664, y: 1.0364883, z: -0.003092566}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Neck
+      parentName: PitchforkRig_Guides
+      position: {x: -0, y: 1.4683572, z: -0.016602894}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Reference
+      parentName: PitchforkRig_Guides
+      position: {x: -0, y: -0.0011156631, z: 0.01559153}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightArm
+      parentName: PitchforkRig_Guides
+      position: {x: 0.114446186, y: 1.3812684, z: -0.030005435}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightFoot
+      parentName: PitchforkRig_Guides
+      position: {x: 0.13530912, y: 0.0328601, z: -0.05738633}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightForeArm
+      parentName: PitchforkRig_Guides
+      position: {x: 0.22181045, y: 1.1531429, z: -0.043193616}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightHand
+      parentName: PitchforkRig_Guides
+      position: {x: 0.31591478, y: 0.9614076, z: 0.027521681}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightLeg
+      parentName: PitchforkRig_Guides
+      position: {x: 0.10559147, y: 0.54165626, z: -0.021764271}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightShoulder
+      parentName: PitchforkRig_Guides
+      position: {x: 0.05687683, y: 1.2845372, z: -0.02882384}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightToeBase
+      parentName: PitchforkRig_Guides
+      position: {x: 0.15532309, y: 0.024804724, z: 0.09844174}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightUpLeg
+      parentName: PitchforkRig_Guides
+      position: {x: 0.085404664, y: 1.0364883, z: -0.003092566}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine
+      parentName: PitchforkRig_Guides
+      position: {x: -0, y: 1.1589434, z: 0.017789124}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine1
+      parentName: PitchforkRig_Guides
+      position: {x: -0, y: 1.285115, z: 0.011451642}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine2
+      parentName: PitchforkRig_Guides
+      position: {x: -0, y: 1.3949441, z: 0.0026935341}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Reference
+      parentName: Villager - Breathing(Clone)
+      position: {x: -0.009494574, y: -0.06329071, z: 0.11747545}
+      rotation: {x: -0.01323663, y: 0.0008108187, z: 0.012644461, w: 0.99983215}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Hips
+      parentName: PitchforkRig_Reference
+      position: {x: 0.037433866, y: 1.0371593, z: -0.06740543}
+      rotation: {x: 0.5894973, y: -0.3905033, z: -0.5573142, w: 0.43520215}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Spine
+      parentName: PitchforkRig_Hips
+      position: {x: -0.095914416, y: 0.00000017059841, z: 0.00000005151474}
+      rotation: {x: 0.0020372812, y: -0.011952412, z: 0.058116462, w: 0.9982362}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Spine1
+      parentName: PitchforkRig_Spine
+      position: {x: -0.12633063, y: -0.0000000023706, z: 0.000000019409967}
+      rotation: {x: -0.018131569, y: -0.021447215, z: 0.020191992, w: 0.9994016}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Spine2
+      parentName: PitchforkRig_Spine1
+      position: {x: -0.110177726, y: -0.00000001930093, z: 0.000000015521746}
+      rotation: {x: -0.020539274, y: -0.019193962, z: 0.09485408, w: 0.9950942}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_LeftShoulder
+      parentName: PitchforkRig_Spine2
+      position: {x: 0.09876784, y: -0.058548853, z: 0.056876857}
+      rotation: {x: -0.44356516, y: 0.51412046, z: 0.38017586, w: 0.62800986}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_LeftArm
+      parentName: PitchforkRig_LeftShoulder
+      position: {x: -0.11257243, y: -0.000000016432502, z: 0.00000003313283}
+      rotation: {x: 0.711238, y: 0.11185272, z: 0.08565413, w: 0.6886893}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_LeftForeArm
+      parentName: PitchforkRig_LeftArm
+      position: {x: -0.25247213, y: 0.0000038265384, z: -0.000012613334}
+      rotation: {x: -0.00012814994, y: -0.0068491823, z: -0.029857486, w: 0.9995307}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_LeftHand
+      parentName: PitchforkRig_LeftForeArm
+      position: {x: -0.22498602, y: 0.0000007765893, z: -0.00000005272265}
+      rotation: {x: 0.039322626, y: 0.02892035, z: 0.18449411, w: 0.9816208}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Point_01
+      parentName: PitchforkRig_LeftHand
+      position: {x: -0.07466152, y: 0.02003665, z: 0.0070694564}
+      rotation: {x: 0.113725476, y: -0.5789616, z: 0.8028611, w: 0.08534765}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Point_02
+      parentName: L_Point_01
+      position: {x: 0.047071494, y: 0.00000015235813, z: 0.00000014140383}
+      rotation: {x: -0.42374238, y: 0.019750996, z: -0.028409524, w: 0.90512174}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Point_03
+      parentName: L_Point_02
+      position: {x: 0.04839117, y: -0.0000005923421, z: -0.00000071837974}
+      rotation: {x: 0.3452523, y: 0.12782146, z: -0.6170907, w: 0.6954579}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Thumb_01
+      parentName: PitchforkRig_LeftHand
+      position: {x: -0.043643754, y: 0.033713304, z: 0.030034672}
+      rotation: {x: -0.15492505, y: -0.50416553, z: 0.7875662, w: 0.31867677}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Thumb_02
+      parentName: L_Thumb_01
+      position: {x: 0.038858682, y: 0.00000045864135, z: -0.00000033618775}
+      rotation: {x: -0.028699316, y: -0.036399864, z: -0.0025306188, w: 0.99892193}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Thumb_03
+      parentName: L_Thumb_02
+      position: {x: 0.028827388, y: -0.00000018318558, z: 0.00000012936952}
+      rotation: {x: 0.1745289, y: -0.016308539, z: -0.68522966, w: 0.7069187}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Index_01
+      parentName: PitchforkRig_LeftHand
+      position: {x: -0.07833058, y: 0.00074550003, z: 0.009673284}
+      rotation: {x: 0.08565839, y: -0.58740777, z: 0.79800195, w: 0.1039607}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Index_02
+      parentName: L_Index_01
+      position: {x: 0.047491554, y: 0.00000056904855, z: -0.00000016017495}
+      rotation: {x: -0.68051285, y: 0.011827107, z: -0.02507191, w: 0.73221165}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Index_03
+      parentName: L_Index_02
+      position: {x: 0.05355784, y: -0.000000035617337, z: 0.00000007195709}
+      rotation: {x: 0.526786, y: 0.332298, z: -0.4716953, w: 0.62416184}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Ling_01
+      parentName: PitchforkRig_LeftHand
+      position: {x: -0.07581743, y: -0.018490598, z: 0.014925537}
+      rotation: {x: -0.04389032, y: 0.85595393, z: -0.50027734, w: -0.123041265}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Ling_02
+      parentName: L_Ling_01
+      position: {x: 0.04284933, y: 0.00000017610026, z: 0.00000012586214}
+      rotation: {x: -0.370093, y: 0.027638568, z: -0.023050915, w: 0.92829734}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Ling_03
+      parentName: L_Ling_02
+      position: {x: 0.045655787, y: -0.000000023156996, z: 0.00000026885917}
+      rotation: {x: 0.5579884, y: 0.31915042, z: -0.43433738, w: 0.63098574}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Pointy_01
+      parentName: PitchforkRig_LeftHand
+      position: {x: -0.07125986, y: -0.037303157, z: 0.021467054}
+      rotation: {x: 0.10069259, y: 0.66115826, z: 0.7396038, w: -0.07561138}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Pointy_02
+      parentName: L_Pointy_01
+      position: {x: 0.032249704, y: 0.00000001332394, z: 0.0000000408932}
+      rotation: {x: 0.6356819, y: 0.015423464, z: 0.030401144, w: 0.771198}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Pointy_03
+      parentName: L_Pointy_02
+      position: {x: 0.035053607, y: -0.0000000770741, z: 0.0000003552533}
+      rotation: {x: 0.64522004, y: 0.4612269, z: -0.28929415, w: 0.5359755}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_RightShoulder
+      parentName: PitchforkRig_Spine2
+      position: {x: 0.098767824, y: -0.05854885, z: -0.056876853}
+      rotation: {x: -0.48243308, y: -0.52940434, z: 0.63353616, w: -0.29261118}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_RightArm
+      parentName: PitchforkRig_RightShoulder
+      position: {x: 0.11257247, y: -0.000000056599276, z: 0.0000000116931504}
+      rotation: {x: 0.59323657, y: 0.09366445, z: 0.10800064, w: 0.7922331}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_RightForeArm
+      parentName: PitchforkRig_RightArm
+      position: {x: 0.2524721, y: -0.0000024508822, z: 0.000009798679}
+      rotation: {x: -0.000029295672, y: -0.0019232028, z: -0.03156792, w: 0.99949974}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_RightHand
+      parentName: PitchforkRig_RightForeArm
+      position: {x: 0.22498609, y: 0.0000013357069, z: -0.000000092461406}
+      rotation: {x: -0.029653488, y: -0.12928683, z: 0.20235035, w: 0.97028863}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Thumb_01
+      parentName: PitchforkRig_RightHand
+      position: {x: 0.043643836, y: -0.033713058, z: -0.030034091}
+      rotation: {x: 0.16729555, y: 0.78362334, z: -0.49588886, w: -0.33472532}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Thumb_02
+      parentName: R_Thumb_01
+      position: {x: -0.038859397, y: -4.371503e-18, z: -2.1461782e-17}
+      rotation: {x: -0.079332456, y: 0.0016406714, z: -0.025373714, w: 0.99652386}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Thumb_03
+      parentName: R_Thumb_02
+      position: {x: -0.028827492, y: -3.2404635e-17, z: -4.8698025e-17}
+      rotation: {x: 0.1745289, y: -0.016308539, z: -0.68522966, w: 0.7069187}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Point_01
+      parentName: PitchforkRig_RightHand
+      position: {x: 0.07466173, y: -0.020036036, z: -0.0070694718}
+      rotation: {x: 0.11339733, y: -0.58586484, z: 0.79919595, w: 0.072036184}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Point_02
+      parentName: R_Point_01
+      position: {x: -0.04707105, y: 8.6042285e-18, z: -2.1510571e-18}
+      rotation: {x: -0.20288408, y: 0.03411299, z: -0.015602799, w: 0.978484}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Point_03
+      parentName: R_Point_02
+      position: {x: -0.04839181, y: 6.984342e-17, z: -1.279394e-16}
+      rotation: {x: 0.3452523, y: 0.12782146, z: -0.6170907, w: 0.6954579}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Index_01
+      parentName: PitchforkRig_RightHand
+      position: {x: 0.07833045, y: -0.00074498996, z: -0.0096728}
+      rotation: {x: 0.108488664, y: -0.5552037, z: 0.81997645, w: 0.08727974}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Index_02
+      parentName: R_Index_01
+      position: {x: -0.047492083, y: -1.3877787e-18, z: 6.6266436e-18}
+      rotation: {x: -0.7887767, y: 0.009643134, z: -0.0249008, w: 0.6140996}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Index_03
+      parentName: R_Index_02
+      position: {x: -0.05355745, y: -7.365729e-17, z: 2.0746093e-17}
+      rotation: {x: 0.526786, y: 0.332298, z: -0.4716953, w: 0.62416184}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Ring_01
+      parentName: PitchforkRig_RightHand
+      position: {x: 0.07581757, y: 0.018491179, z: -0.0149254985}
+      rotation: {x: -0.064491816, y: 0.841396, z: -0.5242228, w: -0.11438593}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Ring_02
+      parentName: R_Ring_01
+      position: {x: -0.042849515, y: -3.2751578e-17, z: -1.7486013e-17}
+      rotation: {x: -0.25974685, y: 0.0172554, z: -0.029118568, w: 0.96508336}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Ring_03
+      parentName: R_Ring_02
+      position: {x: -0.045655854, y: 1.127358e-16, z: 1.1299373e-16}
+      rotation: {x: 0.5579884, y: 0.31915042, z: -0.43433738, w: 0.63098574}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Pointy_01
+      parentName: PitchforkRig_RightHand
+      position: {x: 0.07126022, y: 0.037303746, z: -0.021467779}
+      rotation: {x: 0.076643564, y: 0.79328454, z: 0.5953399, w: -0.10196069}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Pointy_02
+      parentName: R_Pointy_01
+      position: {x: -0.032249372, y: 3.5995513e-18, z: -1.9607795e-18}
+      rotation: {x: 0.44058585, y: 0.02936454, z: 0.020806523, w: 0.89698887}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Pointy_03
+      parentName: R_Pointy_02
+      position: {x: -0.035053156, y: -3.6082247e-18, z: -4.3992585e-17}
+      rotation: {x: 0.64522004, y: 0.4612269, z: -0.28929415, w: 0.5359755}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Neck
+      parentName: PitchforkRig_Spine2
+      position: {x: -0.07590675, y: -0.00000007847684, z: -0.0000000020872257}
+      rotation: {x: 0.004885852, y: 0.017405761, z: -0.33445466, w: 0.94223845}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Head
+      parentName: PitchforkRig_Neck
+      position: {x: -0.087579556, y: 0.0000001755645, z: 0.00000000300525}
+      rotation: {x: -0.002692977, y: 0.014500465, z: 0.02417952, w: 0.99959886}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Eye_Joint
+      parentName: PitchforkRig_Head
+      position: {x: -0.06390087, y: -0.00080598425, z: 0.026649999}
+      rotation: {x: -0.6411854, y: 0.29164693, z: 0.64923, w: 0.28692114}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Eye_Joint
+      parentName: PitchforkRig_Head
+      position: {x: -0.06390087, y: -0.00080598425, z: -0.026652386}
+      rotation: {x: -0.6411814, y: 0.29125354, z: 0.6492968, w: 0.28717837}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_LeftUpLeg
+      parentName: PitchforkRig_Hips
+      position: {x: 0.027674278, y: -0.012535002, z: 0.08540477}
+      rotation: {x: -0.041047763, y: -0.0804778, z: 0.9775854, w: -0.19017163}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_LeftLeg
+      parentName: PitchforkRig_LeftUpLeg
+      position: {x: -0.49559554, y: -0.000024503588, z: -0.000009738125}
+      rotation: {x: -0.15321015, y: 0.04969156, z: -0.33516866, w: 0.9282885}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_LeftFoot
+      parentName: PitchforkRig_LeftLeg
+      position: {x: -0.5109066, y: 0.0000023533476, z: 0.00000034526147}
+      rotation: {x: -0.015889356, y: -0.11330692, z: 0.86663455, w: 0.48564774}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_LeftToeBase
+      parentName: PitchforkRig_LeftFoot
+      position: {x: -0.15731451, y: -9.2248725e-10, z: 0.000000075656914}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_RightUpLeg
+      parentName: PitchforkRig_Hips
+      position: {x: 0.02767431, y: -0.012534955, z: -0.085404746}
+      rotation: {x: -0.18102619, y: 0.006609082, z: 0.19371805, w: 0.9641884}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_RightLeg
+      parentName: PitchforkRig_RightUpLeg
+      position: {x: 0.49559587, y: -0.000047748425, z: -0.000009418143}
+      rotation: {x: -0.031998258, y: 0.043953992, z: -0.3347326, w: 0.94074345}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_RightFoot
+      parentName: PitchforkRig_RightLeg
+      position: {x: 0.5109064, y: -0.0000020027749, z: -0.00000006042861}
+      rotation: {x: -0.052974805, y: -0.1110193, z: 0.8431558, w: 0.5234089}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_RightToeBase
+      parentName: PitchforkRig_RightFoot
+      position: {x: 0.15731439, y: 0.0000000010426654, z: 0.0000000130252635}
+      rotation: {x: 0.000025416717, y: -0.00000015137995, z: 3.847581e-12, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_Reference
+      parentName: Villager - Breathing(Clone)
+      position: {x: -0, y: -0.0011156631, z: 0.01559153}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_HipsEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: 0.038310908, y: 0.9810831, z: -0.08896872}
+      rotation: {x: 0.12702288, y: 0.0049509807, z: 0.038631547, w: 0.9911349}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftAnkleEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: -0.16805977, y: 0.032204337, z: -0.18711862}
+      rotation: {x: 0.00059324503, y: -0.18176603, z: -0.0032148731, w: 0.9833364}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightAnkleEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: 0.19643398, y: 0.032175157, z: -0.07007073}
+      rotation: {x: 0.00020641083, y: 0.06361558, z: 0.0032618416, w: 0.99796915}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftWristEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: -0.21952009, y: 0.8714387, z: -0.06461167}
+      rotation: {x: 0.07359088, y: 0.16673207, z: 0.5907476, w: 0.7860039}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightWristEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: 0.33150813, y: 0.90350544, z: -0.10861337}
+      rotation: {x: -0.021552395, y: 0.06969033, z: -0.5610733, w: 0.8245456}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftKneeEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: -0.121946596, y: 0.49688062, z: 0.020185627}
+      rotation: {x: 0.19968346, y: -0.12938847, z: -0.073273, w: 0.9685124}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightKneeEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: 0.17327079, y: 0.52205384, z: 0.07313609}
+      rotation: {x: 0.14001448, y: 0.05839424, z: 0.031221583, w: 0.98793286}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftElbowEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: -0.16408794, y: 1.0858935, z: -0.10404682}
+      rotation: {x: 0.073460855, y: 0.16671287, z: 0.59077543, w: 0.7859992}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightElbowEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: 0.23756473, y: 1.1072326, z: -0.12560283}
+      rotation: {x: 0.004338135, y: -0.04762194, z: -0.5375468, w: 0.8418769}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_ChestOriginEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: 0.029497407, y: 1.0939713, z: -0.037881482}
+      rotation: {x: 0.11945841, y: 0.0038820272, z: 0.030091558, w: 0.9923755}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_ChestEndEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: 0.01883992, y: 1.2228224, z: -0.050046258}
+      rotation: {x: 0.09560069, y: -0.00051125634, z: -0.004068089, w: 0.99541134}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftFootEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: -0.22427174, y: 0.024149457, z: -0.040410858}
+      rotation: {x: 0.00059324474, y: -0.18176606, z: -0.003214873, w: 0.9833364}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightFootEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: 0.21644793, y: 0.024120504, z: 0.085757524}
+      rotation: {x: 0.00020641116, y: 0.063615486, z: 0.0032618414, w: 0.99796915}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftShoulderEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: -0.059784316, y: 1.2811369, z: 0.017374305}
+      rotation: {x: 0.27601194, y: -0.11917791, z: 0.5284456, w: 0.7939517}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightShoulderEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: 0.13351941, y: 1.3184367, z: -0.034445383}
+      rotation: {x: 0.123090416, y: 0.13961537, z: -0.52390057, w: 0.83119464}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_HeadEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: 0.020281758, y: 1.4700105, z: 0.050181393}
+      rotation: {x: 0.08902235, y: -0.0005381238, z: -0.0040646195, w: 0.9960212}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftHipEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: -0.046834774, y: 0.97443557, z: -0.08896872}
+      rotation: {x: -0.11371279, y: -0.0344946, z: -0.072571546, w: 0.99025905}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightHipEffector
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: 0.123456545, y: 0.9877306, z: -0.088968694}
+      rotation: {x: -0.16770387, y: 0.039284933, z: 0.04439543, w: 0.9840535}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_Hips
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: 0.03657756, y: 1.0032852, z: -0.06830335}
+      rotation: {x: 0.12702288, y: 0.0049509807, z: 0.038631544, w: 0.9911349}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftUpLeg
+      parentName: PitchforkRig_Ctrl_Hips
+      position: {x: -0.085404664, y: -0.026761169, z: -0.01438162}
+      rotation: {x: -0.2394635, y: -0.043916892, z: -0.106364794, w: 0.96406174}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftLeg
+      parentName: PitchforkRig_Ctrl_LeftUpLeg
+      position: {x: 1.7763568e-17, y: -0.49559554, z: 0}
+      rotation: {x: 0.31473297, y: -0.07189623, z: -0.023873933, w: 0.94615227}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftFoot
+      parentName: PitchforkRig_Ctrl_LeftLeg
+      position: {x: -0, y: -0.51090664, z: 0}
+      rotation: {x: -0.18287885, y: -0.049408786, z: 0.10515726, w: 0.97624594}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftToeBase
+      parentName: PitchforkRig_Ctrl_LeftFoot
+      position: {x: -0.000000104904174, y: -0.008055374, z: 0.15710807}
+      rotation: {x: 1.9979101e-24, y: -0.000000016314175, z: -1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightUpLeg
+      parentName: PitchforkRig_Ctrl_Hips
+      position: {x: 0.085404664, y: -0.026761169, z: -0.01438162}
+      rotation: {x: -0.2899166, y: 0.04618253, z: 0.00016597571, w: 0.955937}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightLeg
+      parentName: PitchforkRig_Ctrl_RightUpLeg
+      position: {x: 0.000000028610229, y: -0.49559554, z: 0.0000048482416}
+      rotation: {x: 0.30482778, y: 0.007200192, z: 0.0021573978, w: 0.95237786}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightFoot
+      parentName: PitchforkRig_Ctrl_RightLeg
+      position: {x: -0.000000009536743, y: -0.51090664, z: 0}
+      rotation: {x: -0.1377305, y: 0.0050225463, z: -0.03683074, w: 0.989772}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightToeBase
+      parentName: PitchforkRig_Ctrl_RightFoot
+      position: {x: 0.000013160705, y: -0.008055374, z: 0.15710807}
+      rotation: {x: 1.1765623e-23, y: -0.000000096073606, z: -1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_Spine
+      parentName: PitchforkRig_Ctrl_Hips
+      position: {x: -0, y: 0.09569397, z: 0.00650007}
+      rotation: {x: -0.007654, y: -0.0018581646, z: -0.008413871, w: 0.9999336}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_Spine1
+      parentName: PitchforkRig_Ctrl_Spine
+      position: {x: -0, y: 0.12617157, z: -0.0063374816}
+      rotation: {x: -0.015319933, y: -0.0037561578, z: -0.016810749, w: 0.9997343}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_Spine2
+      parentName: PitchforkRig_Ctrl_Spine1
+      position: {x: -0, y: 0.1098291, z: -0.008758108}
+      rotation: {x: -0.015327543, y: -0.0038111939, z: -0.016794592, w: 0.9997342}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftShoulder
+      parentName: PitchforkRig_Ctrl_Spine2
+      position: {x: -0.05687683, y: -0.11040695, z: -0.031517375}
+      rotation: {x: 0.000000147584, y: -3.660267e-16, z: -3.792708e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftArm
+      parentName: PitchforkRig_Ctrl_LeftShoulder
+      position: {x: -0.05756936, y: 0.09673126, z: -0.0011815953}
+      rotation: {x: 0.09310312, y: 0.0044646533, z: 0.54743403, w: 0.8316417}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftForeArm
+      parentName: PitchforkRig_Ctrl_LeftArm
+      position: {x: -0.25247228, y: -5.684342e-16, z: 1.3322676e-17}
+      rotation: {x: -0.000114739305, y: 0.3502767, z: -0.0010802799, w: 0.9366456}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_LeftHand
+      parentName: PitchforkRig_Ctrl_LeftForeArm
+      position: {x: -0.22498608, y: 0, z: -4.440892e-18}
+      rotation: {x: 0.000117855314, y: -0.000064566244, z: -0.0000044181315, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightShoulder
+      parentName: PitchforkRig_Ctrl_Spine2
+      position: {x: 0.05687683, y: -0.11040695, z: -0.031517375}
+      rotation: {x: -1.7347235e-18, y: -3.035766e-18, z: 2.986096e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightArm
+      parentName: PitchforkRig_Ctrl_RightShoulder
+      position: {x: 0.05756936, y: 0.09673126, z: -0.0011815953}
+      rotation: {x: 0.047756694, y: 0.09336883, z: -0.5309326, w: 0.8408996}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightForeArm
+      parentName: PitchforkRig_Ctrl_RightArm
+      position: {x: 0.25247228, y: -5.684342e-16, z: 1.3322676e-17}
+      rotation: {x: -0.000022193897, y: -0.22101617, z: 0.00072122354, w: 0.97526985}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_RightHand
+      parentName: PitchforkRig_Ctrl_RightForeArm
+      position: {x: 0.22498608, y: 0, z: -4.440892e-18}
+      rotation: {x: -0.08590268, y: 0.08391773, z: -0.028398719, w: 0.99235684}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_Neck
+      parentName: PitchforkRig_Ctrl_Spine2
+      position: {x: -0, y: 0.07341308, z: -0.019296428}
+      rotation: {x: 0.00000042443384, y: 3.881081e-23, z: -2.260609e-23, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PitchforkRig_Ctrl_Head
+      parentName: PitchforkRig_Ctrl_Neck
+      position: {x: -0, y: 0.07617935, z: 0.04320744}
+      rotation: {x: -0.000000013807131, y: -8.454429e-25, z: 8.454429e-25, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eye_Ctrl
+      parentName: PitchforkRig_Ctrl_Reference
+      position: {x: -0, y: 1.5915868, z: 2.6583147}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Fork_Mesh
+      parentName: Villager - Breathing(Clone)
+      position: {x: -0, y: 0, z: -0.08}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Fork_Neutral
+      parentName: Fork_Mesh
+      position: {x: 0.334851, y: 0.8116928, z: 0.26609644}
+      rotation: {x: 0.20031515, y: -0.0103726955, z: 0.705268, w: 0.679973}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
