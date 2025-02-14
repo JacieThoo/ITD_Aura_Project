@@ -195,7 +195,7 @@ public class AuthManager : MonoBehaviour
                     Debug.Log("User signed up successfully");
                     databaseUiManager.logInErrorMsgContent.text = ""; //Reset error message in case user wants to signup again
                     HideAllPanels();
-                    myDatabase.CreateNewUser(currentUserId,username, email, true, "https://pnghq.com/wp-content/uploads/pnghq.com-default-pfp-png-with-vibr-4.png"); // Creates user data in firebase
+                    myDatabase.CreateNewUser(currentUserId,username, email, true, "https://qabrcgzafrzbwrtrezqc.supabase.co/storage/v1/object/public/images/profilePhotos/default.png"); // Creates user data in firebase
                     myDatabase.DisplayAura();
                     loading.ShowLoadingScreen();
                 }
