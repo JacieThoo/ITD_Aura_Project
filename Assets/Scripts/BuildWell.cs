@@ -27,10 +27,20 @@ public class BuildWell : MonoBehaviour
         {
             myDatabase.UpdateAura(40);
             bricksPlaced++;
+            CheckWellStatus();
         }
         else
         {
             Debug.Log("Already placed 3 bricks");
+        }
+    }
+
+    public void CheckWellStatus()
+    {
+        if (bricksPlaced == 3)
+        {
+            CheckCompletion.Instance.buildWellDone = true;
+            CheckCompletion.Instance.DisableExclamation();
         }
     }
 }
