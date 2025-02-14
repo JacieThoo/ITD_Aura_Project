@@ -16,7 +16,6 @@ public class NPCDialogue : MonoBehaviour
 
     public string npcDialogue; // Editable text in Inspector
     public AudioClip voiceClip; // NPC voice clip
-    public float displayTime = 50f; // Time to display each line
     public NPCDialogue nextDialogue;
 
     public void Start()
@@ -35,7 +34,7 @@ public class NPCDialogue : MonoBehaviour
         // Display current dialogue
         dialogueText.text = npcDialogue;
 
-        float waitTime = displayTime;
+        float waitTime = 2f;
 
         // Play voice clip if assigned
         if (voiceClip != null)
@@ -56,7 +55,7 @@ public class NPCDialogue : MonoBehaviour
         }
         else
         {
-            dialogueText.text = ""; // Clear text after last dialogue
+            dialogueCanvas.gameObject.SetActive(false); // Clear text after last dialogue
         }
     }
 }
