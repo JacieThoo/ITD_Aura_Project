@@ -276,13 +276,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679975867ce769443aa573c3f25196a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogues:
-  - Hi Student. Please help me grow my crops and then pass them to me and Ah Hock.
-  audioClips:
-  - {fileID: 0}
   dialogueText: {fileID: 0}
-  talkButton: {fileID: 0}
   audioSource: {fileID: 0}
+  npcDialogue: 
+  voiceClip: {fileID: 0}
+  displayTime: 2
+  nextDialogue: {fileID: 0}
 --- !u!1 &27353338
 GameObject:
   m_ObjectHideFlags: 0
@@ -15769,7 +15768,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 7.1214145e+30, z: 6.84e-43, w: 3.790616e+30}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 5.697982e-39}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -19579,6 +19578,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d032f5481d2826478451895128a76f4, type: 3}
+--- !u!1001 &2380996925914149289
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6083845384224632014, guid: 283fe5355d512f348bfd09b1027d06bf, type: 3}
+      propertyPath: m_Name
+      value: Hook (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856160370951435892, guid: 283fe5355d512f348bfd09b1027d06bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1879438
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856160370951435892, guid: 283fe5355d512f348bfd09b1027d06bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0669999
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856160370951435892, guid: 283fe5355d512f348bfd09b1027d06bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.3839326
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856160370951435892, guid: 283fe5355d512f348bfd09b1027d06bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856160370951435892, guid: 283fe5355d512f348bfd09b1027d06bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856160370951435892, guid: 283fe5355d512f348bfd09b1027d06bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856160370951435892, guid: 283fe5355d512f348bfd09b1027d06bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856160370951435892, guid: 283fe5355d512f348bfd09b1027d06bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856160370951435892, guid: 283fe5355d512f348bfd09b1027d06bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6856160370951435892, guid: 283fe5355d512f348bfd09b1027d06bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 283fe5355d512f348bfd09b1027d06bf, type: 3}
 --- !u!1001 &2779669268269126897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21582,3 +21638,4 @@ SceneRoots:
   - {fileID: 973411758}
   - {fileID: 1220623538}
   - {fileID: 1652404406}
+  - {fileID: 2380996925914149289}
