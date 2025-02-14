@@ -47,6 +47,11 @@ public class AuthManager : MonoBehaviour
     /// </summary>
     private FirebaseUser _user;
 
+    /// <summary>
+    /// Reference to door script
+    /// </summary>
+    public HouseDoor houseDoor;
+
     private void Start()
     {
         // Initialize Firebase Authentication
@@ -154,6 +159,7 @@ public class AuthManager : MonoBehaviour
         myDatabase.UpdateUserOnline(currentUserId, false);
         _auth.SignOut();
         ShowLogInPanel();
+        houseDoor.CloseDoor();
     }
 
     /// <summary>
@@ -232,6 +238,7 @@ public class AuthManager : MonoBehaviour
                     myDatabase.DisplayAura();
                     loading.ShowLoadingScreen();
                     HideAllPanels();
+                    houseDoor.OpenDoor();
                 }
             });
     }
