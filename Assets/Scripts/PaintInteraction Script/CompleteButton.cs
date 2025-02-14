@@ -11,6 +11,8 @@ using System.Collections;
 public class CompleteButton : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText; // Reference to dialogue text
+    public Canvas dialogueCanvas;
+    public Canvas exclamationMark; // Quest UI
 
     public AudioSource completedClip; // Clip for the "What a piece of art!" voice
     public AudioSource incompleteClip; // Clip for the "Painting not done" voice
@@ -22,6 +24,7 @@ public class CompleteButton : MonoBehaviour
 
     public GameObject confettiEffect; // Reference to the confetti particle system
     public float confettiDuration = 10f; // Duration for confetti
+
 
     public void OnCompleteButtonPressed()
     {
@@ -44,8 +47,11 @@ public class CompleteButton : MonoBehaviour
 
     private IEnumerator CompletePainting()
     {
+        dialogueCanvas.gameObject.SetActive(true);
         // Display the complete message
         dialogueText.text = complete;
+
+        exclamationMark.gameObject.SetActive(false);
 
         // Play the completed sound clip
         if (completedClip != null)
@@ -74,6 +80,7 @@ public class CompleteButton : MonoBehaviour
 
     private void DisplayIncompleteMessage()
     {
+        dialogueCanvas.gameObject.SetActive(true);
         // Display incomplete message
         dialogueText.text = incomplete;
 

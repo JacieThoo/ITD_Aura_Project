@@ -18,6 +18,9 @@ public class NPCDialogue : MonoBehaviour
     public AudioClip voiceClip; // NPC voice clip
     public NPCDialogue nextDialogue;
 
+    public Canvas exclamationMark; // Quest UI
+
+
     public void Start()
     {
         dialogueCanvas.gameObject.SetActive(false);
@@ -43,6 +46,7 @@ public class NPCDialogue : MonoBehaviour
             audioSource.Play();
             waitTime = voiceClip.length; //Text last until the audio ends
             dialogueCanvas.gameObject.SetActive(true);
+            exclamationMark.gameObject.SetActive(false);
         }
 
         // Wait for the displayTime before moving to next dialogue
@@ -56,6 +60,7 @@ public class NPCDialogue : MonoBehaviour
         else
         {
             dialogueCanvas.gameObject.SetActive(false); // Clear text after last dialogue
+            exclamationMark.gameObject.SetActive(true);
         }
     }
 }
