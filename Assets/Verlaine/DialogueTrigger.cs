@@ -6,12 +6,14 @@ public class DialogueTrigger : MonoBehaviour
 {
 
 
+    private int enterCount = 0;
+
     public AudioSource audioSource;
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && enterCount == 0) 
         {
-            //collisionCount++;
+            enterCount++;
 
             audioSource.Play();
 
