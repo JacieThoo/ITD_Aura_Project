@@ -40,9 +40,6 @@ public class Whiteboard : MonoBehaviour
 
         paintedPixels += newPixels;
 
-        // Add aura points whenever paint touches the canvas
-        myDatabase.UpdateAura(newPixels / 100);
-
         // Calculate current coverage
         float coverage = (float)paintedPixels / totalPixels;
 
