@@ -14,6 +14,8 @@ public class CheckCompletion : MonoBehaviour
     public bool buildWellDone = false;
     public bool recyclingDone = false;
 
+    public int totalItemsRecycled = 0;
+
     private void Awake()
     {
         if (Instance == null)
@@ -36,5 +38,20 @@ public class CheckCompletion : MonoBehaviour
         {
             buildWellExclamation.gameObject.SetActive(false);
         }
+        else if (recyclingDone)
+        {
+            recyclingExclamation.gameObject.SetActive(false);
+        }
     }
+    public void AddRecycledItem()
+    {
+        totalItemsRecycled++;
+
+        if (totalItemsRecycled >= 8)
+        {
+            recyclingDone = true;
+            DisableExclamation();
+        }
+    }
+
 }
