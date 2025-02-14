@@ -9,16 +9,25 @@ using System.Collections;
 
 public class NPCDialogue : MonoBehaviour
 {
+
+    public Canvas dialogueCanvas;
     public TextMeshProUGUI dialogueText; // Text UI for displaying dialogue
     public AudioSource audioSource; // AudioSource for playing voice clips
 
     public string npcDialogue; // Editable text in Inspector
     public AudioClip voiceClip; // NPC voice clip
-    public float displayTime = 2f; // Time to display each line
-    public NPCDialogue nextDialogue; 
+    public float displayTime = 50f; // Time to display each line
+    public NPCDialogue nextDialogue;
+
+    public void Start()
+    {
+        dialogueCanvas.gameObject.SetActive(false);
+    }
+
     public void NpcDialogue() // Called by UI Button
     {
         StartCoroutine(DisplayDialogue());
+     
     }
 
     private IEnumerator DisplayDialogue()
@@ -26,15 +35,19 @@ public class NPCDialogue : MonoBehaviour
         // Display current dialogue
         dialogueText.text = npcDialogue;
 
+        float waitTime = displayTime;
+
         // Play voice clip if assigned
         if (voiceClip != null)
         {
             audioSource.clip = voiceClip;
             audioSource.Play();
+            waitTime = voiceClip.length; //Text last until the audio ends
+            dialogueCanvas.gameObject.SetActive(true);
         }
 
         // Wait for the displayTime before moving to next dialogue
-        yield return new WaitForSeconds(displayTime);
+        yield return new WaitForSeconds(waitTime);
 
         // If there's a next dialogue, show it
         if (nextDialogue != null)
